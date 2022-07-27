@@ -13,7 +13,7 @@ export default function Products() {
     data: products,
     error,
     loading,
-  } = useFetch('products?category=' + category);
+  } = useFetch(`products?category=${category}`);
 
   function renderProduct(p) {
     return (
